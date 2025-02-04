@@ -1,0 +1,33 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+env/
+env.bak/
+*.egg-info/
+
+# Configuration files
+/config/
+
+# Output files
+/data/output/
+*.csv
+
+# IDE files
+*.idea/
+*.vs/
+*.vscode/
+
+# Logs
+*.log
+
+# Sensitive information
+*.env
+
+# Allure reports
+allure-results/
+allure-report/
+report.html
