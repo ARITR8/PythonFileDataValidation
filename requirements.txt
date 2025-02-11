@@ -2,3 +2,5 @@ pymongo       # MongoDB driver for Python
 boto3       # AWS SDK for Python to interact with S3 and other AWS services
 pandas      # Data manipulation and analysis library, used for data processing
 pytest       # Testing framework for running tests
+pytest-xdist
+sqllite3

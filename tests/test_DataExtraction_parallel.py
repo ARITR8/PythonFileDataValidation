@@ -8,8 +8,8 @@ from src.data_validator import validate_extracted_data
 from src.s3_handler import upload_to_s3
 
 @pytest.mark.parametrize("profile_name, input_file, expected_file, output_file, s3_key", [
-    ("MemberDataProfile", './data/input/members1.txt', './data/expected/expected_data1.csv', './data/output/extracted_data1.csv','output/extracted_data1.csv'),
-    ("MemberDataProfile", './data/input/members2.txt', './data/expected/expected_data2.csv', './data/output/extracted_data2.csv','output/extracted_data2.csv'),
+    ("MemberDataProfile", './data/input/members1.txt', './data/expected/members1.csv', './data/output/extracted_data1.csv','output/extracted_data1.csv'),
+    ("MemberDataProfile", './data/input/members2.txt', './data/expected/members2.csv', './data/output/extracted_data2.csv','output/extracted_data2.csv'),
     # Add more cases as needed
 ])
 def test_e2e_workflow(profile_name, input_file, expected_file, output_file, s3_key):

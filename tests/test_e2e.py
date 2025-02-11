@@ -6,14 +6,24 @@ from src.file_extractor import extract_data_from_flat_file, save_extracted_data
 from src.data_validator import validate_extracted_data
 #from src.s3_handler import upload_to_s3
 
+
+
 class TestEndToEndProcess(unittest.TestCase):
+    # List of S3 bucket names
+    S3_BUCKETS = [
+        "your_s3_bucket_name_one",
+        "your_s3_bucket_name_two",
+        "your_s3_bucket_name_three",
+        "your_s3_bucket_name_four",
+        "your_s3_bucket_name_five"
+    ]
 
     def setUp(self):
         self.test_cases = [
             {
                 "profile_name": "MemberDataProfile",
                 "input_file": './data/input/members1.txt',
-                "expected_file": './data/expected/expected_data1.csv',
+                "expected_file": './data/expected/members1.csv',
                 "output_file": './data/output/extracted_data1.csv',
                 "s3_key": "output/extracted_data1.csv"
             },
