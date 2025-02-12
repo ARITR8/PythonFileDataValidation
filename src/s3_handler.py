@@ -1,5 +1,4 @@
 import boto3
-from config.config import S3_BUCKETS  # Import the S3 bucket names
 
 s3_client = boto3.client('s3')
 

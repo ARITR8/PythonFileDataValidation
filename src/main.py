@@ -1,8 +1,7 @@
 # src/main.py
 
-from config.config import DB_NAME
 from src.mongodb_handler import read_profile_attributes
-from src.file_extractor import extract_data_from_flat_file, save_extracted_data
+
 
 def main():
     # Step 1: Define the profile name

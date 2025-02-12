@@ -1,7 +1,7 @@
 # src/mongodb_handler.py
 
 import pymongo
-from config.config import MONGO_URI, DB_NAME, PROFILE_COLLECTION
+from config import MONGO_URI, DB_NAME, PROFILE_COLLECTION
 
 
 def get_mongo_client():
