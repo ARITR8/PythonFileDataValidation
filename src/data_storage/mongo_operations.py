@@ -26,3 +26,10 @@ class MongoOperations:
         if profile:
             return profile["attributes"]
         return None
+
+    def read_attributes_by_record_type(self, record_type):
+        """Retrieve attributes based on record type from MongoDB."""
+        profile = self.profiles.find_one({"recordType": record_type})
+        if profile:
+            return profile["attributes"]
+        return None

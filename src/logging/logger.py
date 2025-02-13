@@ -1,4 +1,4 @@
-from src import logging
+import logging
 
 
 def setup_logger(name):
